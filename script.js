@@ -99,16 +99,28 @@ prebtn.addEventListener("click", Pre);
 
 // ! generate random image
 const imgbtn = document.getElementById("imgbtn");
+
+let images = [
+    "https://housing.com/news/wp-content/uploads/2023/04/Beautiful-black-flowers-to-grow-at-home-04.png",
+    "https://th.bing.com/th/id/R.995809b4b5eb1e5f2fb4f33835375be4?rik=f%2bjc5eQ9Kt%2fH9Q&pid=ImgRaw&r=0",
+]
+
 function getRandomImage() {
-    const images = [
-        "https://housing.com/news/wp-content/uploads/2023/04/Beautiful-black-flowers-to-grow-at-home-04.png",
-      "https://th.bing.com/th/id/R.995809b4b5eb1e5f2fb4f33835375be4?rik=f%2bjc5eQ9Kt%2fH9Q&pid=ImgRaw&r=0",
-    ]
+   
+    let randomIndex = images[Math.floor(Math.round() * images.length)];
+    document.body.backgroundImage = randomIndex;
+
+    // const randomIndex = Math.floor(Math.random() * images.length);
+    // const selectedImage = images[randomIndex];
+    // document.getElementById('randomImage').src = selectedImage;
+
 };
 getRandomImage();
+// document.body.textContent = getRandomImage;
+
     
-const randomIndex = Math.floor(Math.random() * images.length);
-const selectedImage = images[randomIndex];
-document.getElementById('randomImage').src = selectedImage;
+// const randomIndex = Math.floor(Math.random() * images.length);
+// const selectedImage = images[randomIndex];
+// document.getElementById('randomImage').src = selectedImage;
 imgbtn.addEventListener("click", getRandomImage);
 
