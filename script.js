@@ -39,7 +39,7 @@ pastelbtn.addEventListener("click", pastelcolorButton);
 const prebtn = document.getElementById("prebtn");
 
 let preDefined =[
-    "#D20103" , "#490F59", `#B8D611`,
+    "#D20103" , "#490F59", `#B8D611`, `#4F739F`
 ]
 
 function Pre (){
@@ -50,6 +50,11 @@ function Pre (){
 }
 Pre(); 
 prebtn.addEventListener("click", Pre);
+
+
+
+// ! display an image when a predefined colour is set
+
 
 // ! display colour value on screen
 
