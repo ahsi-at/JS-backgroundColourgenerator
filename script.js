@@ -36,12 +36,20 @@ pastelbtn.addEventListener("click", pastelcolorButton);
 
 
 // ! predefined colours
+const prebtn = document.getElementById("prebtn");
 
-let preDefined ={
-    "#D20103" : "#490F59",
+let preDefined =[
+    "#D20103" , "#490F59", `#B8D611`,
+]
+
+function Pre (){
+    let quote = preDefined[Math.floor(Math.random() * preDefined.length). toString(16)]; 
+    document.body.style.backgroundColor = quote;
+    colourvalue.textContent = quote; 
+    console.log(preDefined);
 }
-
-console.log(preDefined);
+Pre(); 
+prebtn.addEventListener("click", Pre);
 
 // ! display colour value on screen
 
