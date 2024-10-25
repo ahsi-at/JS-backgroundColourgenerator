@@ -41,8 +41,10 @@ pastelbtn.addEventListener("click", pastelcolorButton);
 const colourvalue = document.getElementById("colourvalue");
 
 function displayValue(){
-    let value = randomColor;
+    let value = randomColor *  `#` +(Math.floor(Math.random()*77215).toString(16));
     colourvalue.textContent = value; 
 
 }
 displayValue();
+
+Generatebtn.addEventListener("click", displayValue);
