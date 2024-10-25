@@ -36,3 +36,13 @@ pastelcolorButton()
 pastelbtn.addEventListener("click", pastelcolorButton);
 
 
+// ! display colour value on screen
+
+const colourvalue = document.getElementById("colourvalue");
+
+function displayValue(){
+    let value = randomColor;
+    colourvalue.textContent = value; 
+
+}
+displayValue();
