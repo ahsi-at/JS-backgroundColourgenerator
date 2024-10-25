@@ -28,3 +28,8 @@ h1{
     padding: 30px;
     display: block;
 }
+
+
+.image1{
+    background-image: url("https://housing.com/news/wp-content/uploads/2023/04/Beautiful-black-flowers-to-grow-at-home-04.png");
+}
