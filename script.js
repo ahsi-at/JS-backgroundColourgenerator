@@ -39,7 +39,9 @@ pastelbtn.addEventListener("click", pastelcolorButton);
 const prebtn = document.getElementById("prebtn");
 
 let preDefined =[
-    "#D20103" , "#490F59", `#B8D611`, `#4F739F`
+    "#D20103" , 
+    "#490F59" ,
+     `#B8D611`, `#4F739F`,
 ]
 
 function Pre (){
@@ -54,7 +56,33 @@ prebtn.addEventListener("click", Pre);
 
 
 // ! display an image when a predefined colour is set
+// const prebtn = document.getElementById("prebtn");
 
+preDefined ={
+    "#D20103" : ".image1" , 
+    "#490F59" : ".image2",
+    "#4F739F" : ".image3",
+
+
+};
+
+
+
+
+const preDefinedKeys = Object.keys(preDefined);
+const randomColor = preDefinedKeys[Math.floor(Math.random() * preDefinedKeys.length)];
+      
+
+
+function Pre (){
+    let quote = preDefined[Math.floor(Math.random() * preDefined.length)]; 
+    document.body.style.backgroundColor = quote;
+    document.body.className = preDefined[quote];
+    colourvalue.textContent = quote; 
+    // console.log(preDefined);
+}
+Pre(); 
+prebtn.addEventListener("click", Pre);
 
 // ! display colour value on screen
 
