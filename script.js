@@ -58,31 +58,28 @@ prebtn.addEventListener("click", Pre);
 // ! display an image when a predefined colour is set
 // const prebtn = document.getElementById("prebtn");
 
-preDefined ={
-    "#D20103" : ".image1" , 
-    "#490F59" : ".image2",
-    "#4F739F" : ".image3",
+// preDefined ={
+//     "#D20103" : ".image1" , 
+//     "#490F59" : ".image2",
+//     "#4F739F" : ".image3",
 
 
-};
+// };
 
-
-
-
-const preDefinedKeys = Object.keys(preDefined);
-const randomColor = preDefinedKeys[Math.floor(Math.random() * preDefinedKeys.length)];
+// const preDefinedKeys = Object.keys(preDefined);
+// const randomColor = preDefinedKeys[Math.floor(Math.random() * preDefinedKeys.length)];
       
 
 
-function Pre (){
-    let quote = preDefined[Math.floor(Math.random() * preDefined.length)]; 
-    document.body.style.backgroundColor = quote;
-    document.body.className = preDefined[quote];
-    colourvalue.textContent = quote; 
+// function Pre (){
+//     let quote = preDefined[Math.floor(Math.random() * preDefined.length)]; 
+//     document.body.style.backgroundColor = quote;
+//     document.body.className = preDefined[quote];
+//     colourvalue.textContent = quote; 
     // console.log(preDefined);
-}
-Pre(); 
-prebtn.addEventListener("click", Pre);
+// }
+// Pre(); 
+// prebtn.addEventListener("click", Pre);
 
 // ! display colour value on screen
 
@@ -98,3 +95,16 @@ prebtn.addEventListener("click", Pre);
 // Generatebtn.addEventListener("click", displayValue);
 
 /* this didnt work because randomcolor is a variable in another function and cant be accessed.*/
+
+
+// ! generate random image
+
+function getRandomImage() {
+    const images = [
+      'image1.jpg',
+      'image2.jpg',
+      'image3.jpg'
+    ];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+    document.getElementById('randomImage').src = selectedImage;
