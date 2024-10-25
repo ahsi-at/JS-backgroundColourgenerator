@@ -43,7 +43,7 @@ let preDefined =[
 ]
 
 function Pre (){
-    let quote = preDefined[Math.floor(Math.random() * preDefined.length). toString(16)]; 
+    let quote = preDefined[Math.floor(Math.random() * preDefined.length)]; 
     document.body.style.backgroundColor = quote;
     colourvalue.textContent = quote; 
     console.log(preDefined);
