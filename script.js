@@ -107,7 +107,8 @@ function getRandomImage() {
 };
 getRandomImage();
     
-imgbtn.addEventListener("click", getRandomImage);
 const randomIndex = Math.floor(Math.random() * images.length);
-    const selectedImage = images[randomIndex];
-    document.getElementById('randomImage').src = selectedImage;
+const selectedImage = images[randomIndex];
+document.getElementById('randomImage').src = selectedImage;
+imgbtn.addEventListener("click", getRandomImage);
+
