@@ -1,14 +1,30 @@
+body{
+    margin: 0;
+    
+}
 h1{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    padding: 20px;
 }
 
-#Generatebtn, #pastelbtn{
+#Generatebtn{
+    display: block;
+    margin: 20px 50px 60px 50px;
+    padding: 30px;
     
 }
 
 #Generatebtn:hover, #pastelbtn:hover {
     color: black;
     box-shadow: 0 1px 16px 0 red;
+    background-color: blue;
 
+}
+
+#pastelbtn{
+    margin: 100px 40px 40px 60px;
+    padding: 30px;
+    display: block;
 }
