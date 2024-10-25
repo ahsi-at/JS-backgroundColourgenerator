@@ -1,4 +1,4 @@
-// ! generate rand colour
+// ! generate random colour
 const Generatebtn = document.getElementById("Generatebtn");
 
 function colorButton(){
@@ -37,7 +37,11 @@ pastelbtn.addEventListener("click", pastelcolorButton);
 
 // ! predefined colours
 
+let preDefined ={
+    "#D20103" : "#490F59",
+}
 
+console.log(preDefined);
 
 // ! display colour value on screen
 
