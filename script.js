@@ -1,3 +1,4 @@
+// ! generate rand colour
 const Generatebtn = document.getElementById("Generatebtn");
 
 function colorButton(){
@@ -8,17 +9,11 @@ function colorButton(){
 
 
 }
-
-
 colorButton()
-
 Generatebtn.addEventListener("click", colorButton);
 
 
-
-
 //  ! generate a random pastel colour
-
 
 const pastelbtn = document.getElementById("pastelbtn"); /* access button*/
 
@@ -37,6 +32,11 @@ function pastelcolorButton(){
 pastelcolorButton()
 
 pastelbtn.addEventListener("click", pastelcolorButton);
+
+
+
+// ! predefined colours
+
 
 
 // ! display colour value on screen
