@@ -97,7 +97,7 @@ prebtn.addEventListener("click", Pre);
 /* this didnt work because randomcolor is a variable in another function and cant be accessed.*/
 
 
-// ! generate random image
+// ! generate random image  --- do this later
 const imgbtn = document.getElementById("imgbtn");
 let images = document.createElement("img");
 let img = [
