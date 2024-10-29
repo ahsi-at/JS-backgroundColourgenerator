@@ -19,7 +19,6 @@ const pastelbtn = document.getElementById("pastelbtn"); /* access button*/
 
 function pastelcolorButton(){
     const r = Math.floor((Math.random() * 127) + 127);
-    // const r = Math.floor((Math.random() * 17) + 127);
     const g = Math.floor((Math.random() * 127) + 127);
     const b = Math.floor((Math.random() * 127) + 127);
     const pastelrandomColor = `rgb(${r}, ${g}, ${b})`;
