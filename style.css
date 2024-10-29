@@ -2,51 +2,25 @@ body{
     margin: 0;
     
 }
-h1{
+h1, h2{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 40px;
     padding: 20px;
 }
 
-#Generatebtn{
-    display: block;
-    margin: 20px 50px 60px 50px;
+#wrapper{
+    display: flex;
+    justify-content: space-around;
     padding: 30px;
-    
 }
 
-#Generatebtn:hover, #pastelbtn:hover {
-    color: black;
-    box-shadow: 0 1px 16px 0 red;
-    background-color: blue;
-
-}
-
-#pastelbtn{
-    margin: 100px 40px 40px 60px;
+button{
     padding: 30px;
-    display: block;
+    margin: 20px;
+}
+button:hover{
+    background-color: beige;
 }
 
-/*!  image stuff */
 
-#imgbtn{
-    display: block;
-}
-#randomImage{
-    height: 100px;
-    width: 100px;
-}
-
-.image1{
-    background-image: url("https://housing.com/news/wp-content/uploads/2023/04/Beautiful-black-flowers-to-grow-at-home-04.png");
-}
-
-.image2{
-    background-image: url("https://th.bing.com/th/id/R.995809b4b5eb1e5f2fb4f33835375be4?rik=f%2bjc5eQ9Kt%2fH9Q&pid=ImgRaw&r=0");
-}
-
-/* .image3{
-    background-image: url("https://th.bing.com/th/id/R.e7dbc6594512849be1ea185771587808?rik=er3aawAO92Ax8w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-ngmjXmcrD2k%2fUj6AbaKlcOI%2fAAAAAAAAAaA%2ffnlfDYl1pQ4%2fs1600%2fImage%2bof%2bflowers-Red-Abstract-Rose-Hd-Wallpaper-picture-of-flowers.jpg&ehk=tJyozS2Sj%2b7yHjzZcjqoQtoeUVZhn2vbbuZQXh8GiJI%3d&risl=&pid=ImgRaw&r=0");
-} */
